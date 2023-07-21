@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6ecff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid cyan; */
+}
+
+main {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+main img {
+  max-width: 100%;
+}
+
+footer {
+  height: 10vh;
+  /* border: 1px solid red; */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  /* padding: 10px; */
+}
+.logo img {
+  max-width: 100%;
+}
+.insta {
+  display: block;
+  /* padding: 10px 10px 10px 20px; */
+}
+
+.insta img {
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: 640px) {
+  .logo {
+    width: 75px;
+    height: 75px;
+    /* padding: 10px; */
+  }
+  .insta img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .img-wrapper {
+    max-width: 984px;
+  }
+}
